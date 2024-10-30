@@ -1,0 +1,163 @@
+@media (max-width: 800px){
+/* Core */
+html{font-size:calc(100vw/64)}
+.header li:first-of-type{border-top:.1rem dashed transparent}
+.header li:first-of-type:hover{border-bottom:.4rem solid transparent}
+.hamb{display:block}
+nav a:not(.logo){display:none}
+.lang{margin-right:7rem}
+#m-menu:checked ~ .menu a{display:block;padding-top:1.5rem}
+#m-menu:checked ~ .menu a:not(.logo):hover{background:#f8f8ff}
+.main > *, .footer > *,.internal > *{padding:3rem 1rem 3rem 1rem}
+.header a.logo{padding:0 1rem}
+.hamb::after{right:1rem}
+.cover,.с-2x,.с-3x,.с-4x,.с-left-wider,.с-right-wider,.с-foot{gap:1rem}
+.cover{display:block}
+.cover p{padding:2rem 0}
+.cover footer{padding-top:2rem}
+.cover::after{width:15rem;height:15rem;background-size:15rem 15rem}
+.с-4x{grid-template-columns:repeat(2, 1fr)}
+.с-foot{grid-template-columns:1fr}
+.с-left-wider{grid-template-columns:1fr}
+.aside{border-top:0.1rem dashed #aaa;padding-top:3rem}
+h3{padding:2rem 0}
+/* Style */
+.padd > div, .padd > figure, .padd > section {
+  padding:2rem 1rem;
+}
+.cover h1 {width:100%;}
+.cover h1 span {font-size:5.4rem;}
+.cover ul{font-size:1.6rem;}
+.cover li{padding-left:1rem;}
+.stats {
+  bottom: 1rem;
+  padding: 1.5rem 3rem;
+  width: 60%;
+	font-size:1rem;
+}
+.stats h2{
+	font-size:2rem;
+}
+.stats p{
+	padding:0;
+}
+.cover::after {
+	bottom: -4rem;
+	right: -11rem;
+  width: 35rem;
+  height: 35rem;
+	background-size: 35rem 35rem;
+}
+.services {
+	font-size:1.4rem;
+	margin-top: -2.6rem;
+}
+.services::after {
+  top: -28.4rem;
+	right: -11rem;
+	width: 35rem;
+  height: 35rem;
+	background-size: 35rem 35rem;
+}
+.services h3{
+	font-size:1.9rem;
+}
+.services li::before {
+  top:-.3rem;
+}
+.free {
+  padding: 8rem 1rem;
+}
+.free p {
+  padding: 2rem 0;
+}
+.free .big {
+	width: 70%;
+}
+.free::after {    
+  width: 17.3rem;
+  height: 20rem;
+	background-size: 17.3rem 20rem;
+}
+.inside {
+	margin-top:-2.6rem;
+  background-image: none;
+}
+.inside:before {
+  display: block;
+  background: url('../svg/wr.svg') no-repeat;
+  width: 45rem;
+  height: 45rem;
+	background-size: 45rem 45rem;
+  top: -9.4rem;
+  left: -22rem;
+  opacity: 0.1;
+}
+.case-cards, .case-cards h4{
+	font-size:1.4rem;
+}
+.case-cards:after {
+  top:11rem;
+  background-size: 25rem 9rem;
+  width: 25rem;
+  height: 9rem;
+}
+.redfl{
+	font-size:1.4rem;
+}
+.redfl h3{
+	font-size:1.8rem;
+}
+.redfl header, .redfl ul{
+	margin:0;
+}
+.approach {
+	font-size:1.5rem;
+	padding:5rem 1rem 7rem;
+}
+.approach .hidden{
+	
+}
+.approach header{
+  margin: 0;
+}
+.approach header{
+  margin: 0;
+}
+.approach > *{
+  grid-column: 1 / -1;
+}
+.approach li:last-child {
+  width:70%;
+}
+.approach > footer{
+  margin:0;
+}
+.approach::before {
+	left:auto;
+	right:0;
+	bottom:-.0rem;
+	background-size: 23rem 23rem;
+  width: 23rem;
+  height: 23rem;
+}
+.refs {
+	grid-template-columns: repeat(1, 3fr);
+}
+.refs footer p{
+	padding:0;
+}
+.footer {
+	padding-top:2rem;
+}
+.footer ul {
+	display: flex;
+	gap: 2rem;
+}
+.footer li{flex:1}
+.footer li a{
+	justify-content: center;	
+	padding:2rem 0
+}
+a.f-logo::before{left:1rem}
+}

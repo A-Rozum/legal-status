@@ -1,3 +1,4 @@
+/* Core */
 a:hover{color:#333}
 @keyframes spinAround{from{transform:rotate(0)}to{transform:rotate(359deg)}}
 @supports (-webkit-appearance:none){
@@ -111,3 +112,5 @@ transform:translateY(-0.3rem);
 box-shadow:0 0.6rem 0.9rem rgba(0, 0, 0, 0.1)
 }
 .footer a:hover{color:#fff}
+/* Style */
+.header:hover::before, body.scrolled .header::before{opacity:.07}

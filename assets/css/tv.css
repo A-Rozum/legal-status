@@ -1,0 +1,42 @@
+@media (min-width: 2000px) {
+html{font-size:calc(100vw/160)}
+.main > *, .footer > *,.internal > *{padding:6rem 12rem 6rem 12rem}
+.header a.logo{padding:0 12rem}
+.nav-end{padding-right:12rem}
+.cover,.с-2x,.с-3x,.с-4x,.с-left-wider,.с-right-wider,.с-foot{gap:6rem}
+/* Style */
+.cover::after {
+	bottom: -12.4rem;
+	width: 80rem;
+  height: 80rem;
+	background-size: 80rem 80rem;
+}
+.services{margin-top:-2.7rem}
+.services::after {
+  width: 80rem;
+  height: 80rem;
+	background-size: 80rem 80rem;
+  top: -65rem;
+}
+.free::after {    
+  width: 47.5rem;
+  height: 55rem;
+	background-size: 47.5rem 55rem;
+	right:5rem;
+}
+.inside:before {
+  width: 55rem;
+  height: 55rem;
+	background-size: 55rem 55rem;
+  top: -14.8rem;
+  left: -23rem;
+}
+.case-cards:after{top:2.5rem}
+.approach::before {
+	background-size:57rem 57rem;
+  width:57rem;
+  height:57rem
+}
+.footer{padding-top:3rem}
+a.f-logo::before{left:11rem}
+}
