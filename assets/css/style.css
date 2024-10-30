@@ -151,9 +151,6 @@
 	grid-column: 1 / -1;
 	text-align:right;
 }
-.faq-list ul {
-  list-style:none;
-}
 .faq-list li {
 	padding-left:0;
 	margin-top: 1rem;
@@ -307,10 +304,6 @@ a.f-logo::before {
 }
 .footer a {
   padding-bottom:0;
-}
-.footer img {
-  width: 48rem;
-	filter: invert(100%);
 }
 @media (max-width: 800px) {
 .padd > div, .padd > figure, .padd > section {

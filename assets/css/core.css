@@ -6,26 +6,14 @@ ul,li{list-style:none}
 *,::after,::before{box-sizing:inherit}
 article,aside,figure,footer,header,hgroup,section{display:block}
 body,button,input,optgroup,select,textarea{font-family:BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Fira Sans",Helvetica,Arial,sans-serif}
-code,pre{font-family:monospace}
+
 body{color:#4a4a4a;font-size:1.6rem;font-weight:400}
 a{cursor: pointer;color:#48c;text-decoration:none}
-a:hover{color:#333}
-code{background-color:#f5f5f5;color:#da1039;font-weight:400;padding:.4rem .8rem .4rem}
+
 input[type=checkbox],input[type=radio]{vertical-align:baseline}
-code,small,pre{font-size:1.4rem}
+
 strong{font-weight:700}
-fieldset{border:none}
-pre{overflow-x:auto;white-space:pre;word-wrap:normal}
-pre code{background-color:transparent;font-size:1.6rem;padding:0}
-@keyframes spinAround{from{transform:rotate(0)}to{transform:rotate(359deg)}}
-@supports (-webkit-appearance:none){
-  ::-webkit-scrollbar{width:1rem;}
-  ::-webkit-scrollbar-track{background-color:transparent;}
-  ::-webkit-scrollbar-thumb{background-color:#999;border-radius:4rem;border:0.4rem solid transparent;background-clip:content-box}
-  ::-webkit-scrollbar-thumb:hover{border:0.2rem solid transparent}
-  ::-webkit-scrollbar-button:vertical{height: 1rem;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><polygon fill="%23ccc" points="5,2 8,8 2,8"/></svg>')}
-  ::-webkit-scrollbar-button:vertical:end{height:1rem;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><polygon fill="%23ccc" points="5,8 8,2 2,2"/></svg>')}
-}
+
 
 /* Стили элементов */
 body {
@@ -43,13 +31,7 @@ blockquote {
 strong {
 	color:#036;
 }
-button {
-	cursor:pointer;
-	border-width: .2rem;
-	border-radius: .4rem;
-  padding: .1rem .7rem .2rem;
-	font-size: 1.5rem;
-}
+
 .btn {
   display:flex;
 	font-size: 1.5rem;
@@ -60,9 +42,7 @@ button {
 	border-width:.2rem;
 	border-radius: .4rem;
 }
-.btn:active {
-	border-style: inset;
-}
+
 main .btn {
 	width:max-content;
 	justify-content: center;
@@ -71,46 +51,12 @@ main .btn {
 	padding: 1rem 3rem;
 	font-size: 1.8rem;
 }
-main .btn:active {
-	color:#fff;
-}
+
 main .big {
 	width:100%;
 }
-main .medium {
-	width:50%;
-}
-.form, .form form{
-  display: flex;
-  flex-direction: column;
-}
-label{margin-bottom: 0.5rem;}
-input, textarea {
-  padding: 0.5rem;
-  border: 0.2rem inset #ccc;
-  border-radius: 0.4rem;
-	outline: none;
-}
-input:focus, textarea:focus {
-  border: 0.2rem solid #39f;
-}
-textarea {
-  min-height: 10rem;
-}
-.form button {
-  margin-top: 3rem;
-	display: block;
-	text-align:center;
-	background:#39f;
-	color:#eee;
-	padding: 1rem 3rem;
-	font-size: 1.8rem;
-	border: 0.2rem outset #ccc;
-}
-.form button:active {
-	color:#fff;
-	border-style: inset;
-}
+
+
 /* Позиционирование базовых блоков */
 
 .header, .main, .footer, .internal {
@@ -122,10 +68,7 @@ textarea {
   position: relative;
 	overflow:hidden;
 }
-.content > * > * ,.aside > * > * {
-	margin-bottom: 3rem;
-	overflow:hidden;
-}
+
 .main > * > * {
 	position: relative;
 	z-index: 2;
@@ -142,39 +85,21 @@ textarea {
 	z-index: 7;
 	border-bottom: .1rem dashed transparent;
 }
-.header:hover, body.scrolled .header {
-  background: #fff;
-  border-bottom: .1rem dashed gray;
-}
-.header:hover a, body.scrolled .header a{
-  color: #666;
-}
-
 .header * {
   display: flex;
 	align-items: center;
 }
-
 nav > ul > li {
 	cursor:pointer;
 	height: 5.5rem;
 	border-bottom:0.4rem solid transparent;
-}
-nav > ul > li.active {
-	border-bottom:0.4rem solid #cde;
-}
-nav > ul > li:hover {
-	border-bottom:0.4rem solid #39f;
-	color: #333;
 }
 nav a {
   color: #fff;
 	height: 100%;
   padding: 0.3rem 2.6rem 0;
 }
-nav a:not(.logo):hover {
-  background-color: #eee;
-}
+
 .header a.logo {
   padding:0 4rem;
 }
@@ -182,9 +107,6 @@ nav a:not(.logo):hover {
   width: 5rem;
 	padding-top:.2rem;
 	filter: invert(100%);
-}
-.header:hover .logo img, body.scrolled .header .logo img {
-  filter: none;
 }
 /* Подменю */
 .has-drop {
@@ -204,9 +126,6 @@ nav a:not(.logo):hover {
   height:3rem;
 	transition: all 0.3s ease;
 }
-.has-drop:hover > a::after {
-	transform: rotate(90deg);
-}
 .submenu {
 	transform: scaleY(0);
 	transform-origin: 0 0;
@@ -223,9 +142,6 @@ nav a:not(.logo):hover {
   transition: 0.3s ease-in-out;
   padding:1rem 0;
 }
-li:hover > .submenu {
-  transform: scaleY(1);
-}
 .submenu li {
 	width:100%;
 	height: 4.5rem;
@@ -237,14 +153,6 @@ li:hover > .submenu {
 	border:0.1rem dashed #ccc;
 	border-left:0.4rem solid transparent;
 }
-.submenu li a.active {
-  background: #cde;
-}
-.submenu li a:not(.active):hover {
-  background: #f8f8ff;
-	border-left:0.4rem solid #39f;
-}
-
 /* Правая часть шапки */
 .nav-end {
 	justify-content: flex-end;
@@ -263,14 +171,8 @@ li:hover > .submenu {
 .w1{
   fill: #2b3;
 }
-.header:hover .w1, body.scrolled .w1 {
-  fill: #fff;
-}
 .w2{
   fill: #fff;
-}
-.header:hover .w2, body.scrolled .w2 {
-  fill: #2b3;
 }
 .lang {
   color:#333;
@@ -304,12 +206,6 @@ li:hover > .submenu {
   transition: 0.3s ease-in-out;
   padding:.2rem 0;
 }
-#lang-toggle:checked ~ .lang-unit {
-  transform: scaleY(1);
-}
-#lang-toggle:checked ~ .lang-button img {
-  transform: rotate(180deg);
-}
 .lang-unit a {
 	background: #fff;
 	color: #333;
@@ -317,9 +213,6 @@ li:hover > .submenu {
 	height:4rem;
 	padding: 0 1.2rem 0 1rem;
 	border:0.1rem dashed #ccc;
-}
-.lang-unit a.active {
-  background: #def;
 }
 .lang-unit a:not(.active):hover {
   background: #eee;
@@ -333,88 +226,7 @@ li:hover > .submenu {
 	cursor:pointer;
 	display: none;
 }
-.hamb:after {
-	content: '';
-  position: absolute;
-	top:0.5rem;
-	right:3rem;
-	width: 4.4rem;
-	height: 4.4rem;
-	background: url('../svg/burg.svg') no-repeat;
-	filter: invert(100%);
-}
-.header:hover .hamb:after, body.scrolled .hamb:after{
-    filter: none;
-}
 #m-menu{display:none;}
-#m-menu:checked ~ .hamb:after {
-	background: url('../svg/x.svg');
-}
-#m-menu:checked ~ .menu {
-    display: block;
-    visibility: visible;
-    position: fixed;
-    top: 0;
-		left:0;
-		width:100%;
-		height: 100%;
-    background-color: #ccc;
-    box-shadow: none;
-		overflow-y:scroll;
-		z-index: 1;
-		
-}
-#m-menu:checked ~ .menu > *{
-    display: block;
-}
-#m-menu:checked ~ .menu li{
-		border:none;
-		border-top:0.1rem dashed #aaa;
-		border-left:0.4rem solid transparent;
-		background-color: #fff;
-		height: auto;
-}
-
-#m-menu:checked ~ .menu > li.active {
-	border-left:0.4rem solid #cde;
-}
-#m-menu:checked ~ .menu > li:hover {
-	border-left:0.4rem solid #39f;
-}
-#m-menu:checked ~ .menu img{
-		margin-top: -1.65rem;
-		margin-left: -.4rem;
-}
-#m-menu:checked ~ .menu a{
-		height: 5.4rem;
-		color:#444;
-		width:100%;
-		background-color: #fff;
-		border:none;
-}
-#m-menu:checked ~ .menu .logo{
-		
-}
-#m-menu:checked ~ .menu .submenu{
-	transform: scaleY(1);
-	position: static;
-	height: auto;
-	background-color: #fff;
-  border: none;
-  box-shadow: none;
-  width: 100%;
-	padding: 0 0 0 2rem;
-}
-#m-menu:checked ~ .menu .submenu li {
-	border-bottom:0.4rem solid transparent;
-}
-#m-menu:checked ~ .menu .submenu li.active {
-	border-bottom:0.4rem solid #cde;
-}
-#m-menu:checked ~ .menu .submenu li:hover {
-	border-bottom:0.4rem solid #39f;
-}
-
 /* Основные секции*/
 .main {
   background: #fff;
@@ -436,7 +248,6 @@ main li {
   background: #39d;
   border-radius: 50%;
 }
-.dashed {border-top:0.1rem dashed #aaa;padding-top: 3rem;}
 /* Cтили основных секций */
 .cover, .с-2x, .с-3x, .с-4x, .с-left-wider, .с-right-wider, .с-foot {
   display: grid;
@@ -450,10 +261,6 @@ main li {
 	border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.padd div:hover, .padd > figure:hover, .padd > section:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 0.6rem 0.9rem rgba(0, 0, 0, 0.1);
 }
 .cover {
 	grid-template-columns: 1.5fr 1fr;
@@ -469,19 +276,15 @@ main li {
 .с-2x {
   grid-template-columns: repeat(2, 1fr);
 }
-
 .с-3x {
   grid-template-columns: repeat(3, 1fr);
 }
-
 .с-4x {
   grid-template-columns: repeat(4, 1fr);
 }
-
 .с-left-wider {
   grid-template-columns: 2fr 1fr;
 }
-
 .с-right-wider {
   grid-template-columns: 1fr 2fr;
 }
@@ -493,7 +296,6 @@ main li {
 .с-left-wider > header, .с-foot div{
   grid-column: 1 / -1;
 }
-
 /* Стили для подвала */
 .footer {
   font-size:1.4rem;
@@ -511,17 +313,11 @@ main li {
   display: flex;
 	color:#59c;
 }
-
-.footer a:hover {
-  color: #fff;
-}
 .copyright {
 	padding-top:1rem;
 	text-align: center;
 	border-top:0.1rem dashed #aaa;
 }
-
-
 /* Стлили псевдоэлементов */
 .header > *::before, main > *::before, .footer > *::before, aside::before {
 	display: none;
@@ -550,19 +346,12 @@ main li {
 	z-index: 1;
 	opacity: .05;
 }
-
-.b-left::before,
-.b-right::after {
-  display: block;
-  background-image: url('../svg/check.svg');
-}
 .cover::after {
   width: 50rem;
   height: 50rem;
 	background-size: 50rem 50rem;
 	opacity: .2;
 }
-
 @media (max-width: 800px) {
 	html{font-size:calc(100vw/64);}
 	.header li:first-of-type {border-top:0.1rem dashed transparent;}
