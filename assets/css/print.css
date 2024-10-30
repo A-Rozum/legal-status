@@ -1,0 +1,21 @@
+@media print {
+  .header, .nav-end, .footer, .menu, .submenu, .stats, .btn, .hidden, .case-image, .aside {
+    display: none;
+  }
+  body, main, .main {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: none;
+    box-shadow: none;
+  }
+	h1, h2, h3, p, ul, li, .team p{
+    color: #000;
+  }
+  section {
+    page-break-inside: avoid;
+  }
+  ::before, ::after {
+    display: none;
+  }
+}
