@@ -2,7 +2,6 @@
 a:hover{color:#333}
 @keyframes spinAround{from{transform:rotate(0)}to{transform:rotate(359deg)}}
 @supports (-webkit-appearance:none){
-::-webkit-scrollbar{width:1rem}
 ::-webkit-scrollbar-track{background-color:transparent}
 ::-webkit-scrollbar-thumb{background-color:#999;border-radius:4rem;border:0.4rem solid transparent;background-clip:content-box}
 ::-webkit-scrollbar-thumb:hover{border:0.2rem solid transparent}
