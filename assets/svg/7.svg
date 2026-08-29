@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4">
-<path d="M 0 0 H 1 V 1 H 0 Z"/>
-<path d="M 3 3 H 4 V 4 H 3 Z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="4" height="4" viewBox="0 0 4 4">
+<desc>Created with SVGMaker Editor 3.4.1</desc>
+<defs>
+</defs>
+<path style="fill: rgb(0,0,0)" stroke-linecap="round" d="M0 0L2 0 2 2 0 2Z"/>
+<path style="fill: rgb(0,0,0)" stroke-linecap="round" d="M2 2L4 2 4 4 2 4Z"/>
 </svg>
