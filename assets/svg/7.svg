@@ -4,6 +4,6 @@
 </defs>
 <path style="fill: rgb(0,0,0)" stroke-linecap="round" d="M0 0L2 0 2 2 0 2Z"/>
 <path style="fill: rgb(0,0,0)" stroke-linecap="round" d="M2 2L4 2 4 4 2 4Z"/>
-<path style="fill: rgb(64,64,64)" stroke-linecap="round" d="M2 0L4 0 4 2 2 2Z"/>
-<path style="fill: rgb(64,64,64)" stroke-linecap="round" d="M0 2L2 2 2 4 0 4Z"/>
+<path style="fill: rgb(38,38,38)" stroke-linecap="round" d="M2 0L4 0 4 2 2 2Z"/>
+<path style="fill: rgb(38,38,38)" stroke-linecap="round" d="M0 2L2 2 2 4 0 4Z"/>
 </svg>
