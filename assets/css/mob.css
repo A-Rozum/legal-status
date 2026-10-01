@@ -1,9 +1,6 @@
 @media (max-width: 800px){
 /* Core */
 html{font-size:calc(100vw/64)}
-/* Mobile reading experiment: +15% text, unchanged rem scale and headings. */
-.main{font-size:1.84rem}
-.cover,.free{font-size:2.185rem}
 .header li:first-of-type{border-top:.1rem dashed transparent}
 .header li:first-of-type:hover{border-bottom:.4rem solid transparent}
 .hamb{display:block}
@@ -30,13 +27,13 @@ h3{padding:2rem 0}
 }
 .cover h1 {width:100%;}
 .cover h1 span {font-size:5.4rem;}
-.cover ul{font-size:1.84rem;}
+.cover ul{font-size:1.6rem;}
 .cover li{padding-left:1rem;}
 .stats {
   bottom: 1rem;
   padding: 1.5rem 3rem;
   width: 60%;
-	font-size:1.15rem;
+	font-size:1rem;
 }
 .stats h2{
 	font-size:2rem;
@@ -52,7 +49,7 @@ h3{padding:2rem 0}
 	background-size: 35rem 35rem;
 }
 .services {
-	font-size:1.61rem;
+	font-size:1.4rem;
 	margin-top: -2.6rem;
 }
 .services::after {
@@ -96,10 +93,7 @@ h3{padding:2rem 0}
   left: -22rem;
   opacity: 0.1;
 }
-.case-cards{
-	font-size:1.61rem;
-}
-.case-cards h4{
+.case-cards, .case-cards h4{
 	font-size:1.4rem;
 }
 .case-cards:after {
@@ -109,7 +103,7 @@ h3{padding:2rem 0}
   height: 9rem;
 }
 .redfl{
-	font-size:1.61rem;
+	font-size:1.4rem;
 }
 .redfl h3{
 	font-size:1.8rem;
@@ -118,7 +112,7 @@ h3{padding:2rem 0}
 	margin:0;
 }
 .approach {
-	font-size:1.725rem;
+	font-size:1.5rem;
 	padding:5rem 1rem 7rem;
 }
 .approach .hidden{
@@ -154,7 +148,6 @@ h3{padding:2rem 0}
 	padding:0;
 }
 .footer {
-  font-size:1.61rem;
 	padding-top:2rem;
 }
 .footer ul {
