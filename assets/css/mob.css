@@ -165,6 +165,8 @@ a.f-logo::before{left:1rem}
 .cover,.free{font-size:2.47rem}
 .cover ul{font-size:2.08rem}
 .stats{font-size:1.3rem}
-.services,.case-cards,.redfl,.footer{font-size:1.82rem}
+.case-cards,.footer{font-size:1.82rem}
+/* Compact lists: +20% from their original 1.4rem. */
+.services,.redfl{font-size:1.68rem}
 .approach{font-size:1.95rem}
 }
