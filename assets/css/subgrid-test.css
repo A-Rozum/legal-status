@@ -6,6 +6,15 @@ body { padding-top: 0; }
 .services { margin-top: 0; clip-path: none; }
 .services::after { display: none; }
 .aligned-lists > div { min-width: 0; }
+.aligned-lists li { display: flex; align-items: center; }
+.aligned-lists.services li::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.aligned-lists.redfl li::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* This fixture has one heading and four list items per card. */
 @supports (grid-template-rows: subgrid) {
   .aligned-lists { row-gap: 1rem; }
