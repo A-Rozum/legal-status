@@ -164,7 +164,7 @@
 .faq-list ~ footer {
   margin-top:3rem;
 }
-.inside .с-3x{
+.inside .c-3x{
   grid-column: 1 / -1;
 }
 .case-cards:after {

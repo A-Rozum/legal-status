@@ -235,7 +235,7 @@ main li {
   border-radius: 50%;
 }
 /* Cтили основных секций */
-.cover, .с-2x, .с-3x, .с-4x, .с-left-wider, .с-right-wider, .с-foot {
+.cover, .c-2x, .c-3x, .c-4x, .c-left-wider, .c-right-wider, .c-foot {
   display: grid;
   gap: 3rem;
 }
@@ -259,27 +259,27 @@ main li {
 .cover a {
 	color:#fff;
 }
-.с-2x {
+.c-2x {
   grid-template-columns: repeat(2, 1fr);
 }
-.с-3x {
+.c-3x {
   grid-template-columns: repeat(3, 1fr);
 }
-.с-4x {
+.c-4x {
   grid-template-columns: repeat(4, 1fr);
 }
-.с-left-wider {
+.c-left-wider {
   grid-template-columns: 2fr 1fr;
 }
-.с-right-wider {
+.c-right-wider {
   grid-template-columns: 1fr 2fr;
 }
-.с-foot {
+.c-foot {
   grid-template-columns: 35fr 47fr 16fr;
 }
 /* Стили заголовков и подвалов внутри секций */
-.cover > header, .cover > footer, .с-2x > header, .с-2x > footer, .с-3x > header, .с-4x > header, 
-.с-left-wider > header, .с-foot div{
+.cover > header, .cover > footer, .c-2x > header, .c-2x > footer, .c-3x > header, .c-4x > header, 
+.c-left-wider > header, .c-foot div{
   grid-column: 1 / -1;
 }
 /* Стили для подвала */
@@ -494,7 +494,7 @@ main li {
 .faq-list ~ footer {
   margin-top:3rem;
 }
-.inside .с-3x{
+.inside .c-3x{
   grid-column: 1 / -1;
 }
 .case-cards:after {

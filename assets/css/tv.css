@@ -3,7 +3,7 @@ html{font-size:calc(100vw/160)}
 .main > *, .footer > *,.internal > *{padding:6rem 12rem 6rem 12rem}
 .header a.logo{padding:0 12rem}
 .nav-end{padding-right:12rem}
-.cover,.с-2x,.с-3x,.с-4x,.с-left-wider,.с-right-wider,.с-foot{gap:6rem}
+.cover,.c-2x,.c-3x,.c-4x,.c-left-wider,.c-right-wider,.c-foot{gap:6rem}
 /* Style */
 .cover::after {
 	bottom: -12.4rem;
