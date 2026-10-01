@@ -1,0 +1,29 @@
+/* Isolated experiment. Not loaded by index.html. */
+body { padding-top: 0; }
+.experiment-note { padding: 3rem; font-size: 1.8rem; background: #eef4fa; }
+.experiment-note h1 { font-size: 3rem; margin-bottom: 1rem; }
+.experiment-note p + p { margin-top: 1rem; }
+.services { margin-top: 0; clip-path: none; }
+.services::after { display: none; }
+.aligned-lists > div { min-width: 0; }
+/* This fixture has one heading and four list items per card. */
+@supports (grid-template-rows: subgrid) {
+  .aligned-lists { row-gap: 1rem; }
+  .aligned-lists > div {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    row-gap: 1rem;
+  }
+  .aligned-lists > div > header { grid-row: 1; }
+  .aligned-lists > div > ul {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: 2 / span 4;
+    row-gap: 1rem;
+  }
+}
+.stress-test li { border-bottom: .1rem dashed #aaa; }
+@media (max-width: 800px) {
+  .experiment-note { padding: 2rem 1rem; }
+}

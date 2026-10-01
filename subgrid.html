@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>List row alignment experiment — Legal Status</title>
+  <link rel="stylesheet" href="assets/css/core.css?v=compact-lists-20">
+  <link rel="stylesheet" href="assets/css/bit.css?v=compact-lists-20">
+  <link rel="stylesheet" href="assets/css/mob.css?v=mobile-buttons-40" media="(max-width: 800px)">
+  <link rel="stylesheet" href="assets/css/tv.css?v=compact-lists-20" media="(min-width: 2000px)">
+  <link rel="stylesheet" href="assets/css/subgrid-test.css?v=1">
+</head>
+<body>
+  <div class="experiment-note">
+    <h1>List row alignment test</h1>
+    <p>Separate experiment. The original homepage is unchanged.</p>
+    <p><a href="index.html">Compare with the current homepage</a> · <a href="#stress">Jump to long-text test</a></p>
+    <p>Within each pair of cards, headings and matching list items share row heights. Extra space in a short item is intentional.</p>
+  </div>
+  <main class="main">
+    <section class="services c-2x padd aligned-lists">
+      <header><h2>Our Core Services</h2></header>
+      <div>
+        <header><h3>INTERPOL Red Notice Challenges</h3></header>
+        <ul>
+          <li>INTERPOL database checks</li>
+          <li>Preventive INTERPOL protection</li>
+          <li>INTERPOL data removal</li>
+          <li>CCF decision review requests</li>
+        </ul>
+      </div>
+      <div>
+        <header><h3>Extradition Defense</h3></header>
+        <ul>
+          <li>Safe cross-border travel advice</li>
+          <li>Detention risk prevention</li>
+          <li>Support for local lawyers</li>
+          <li>Expert court testimony</li>
+        </ul>
+      </div>
+      <div>
+        <header><h3>Asylum and Refugee Support</h3></header>
+        <ul>
+          <li>Advice for asylum seekers</li>
+          <li>Asylum application support</li>
+          <li>Refugee status support</li>
+          <li>Drafting asylum refusal appeals</li>
+        </ul>
+      </div>
+      <div>
+        <header><h3>Additional Legal Services</h3></header>
+        <ul>
+          <li>Cross-border criminal law advice</li>
+          <li>Legal opinions</li>
+          <li>ECtHR / OHCHR interim measures</li>
+          <li>Legal document translation</li>
+        </ul>
+      </div>
+    </section>
+    <section class="redfl c-2x padd aligned-lists">
+      <header><h2>Red Flags: When to Seek Immediate Legal Counsel</h2></header>
+      <div>
+        <header><h3>Legal and Investigative Actions:</h3></header>
+        <ul><li>Investigative summons</li><li>Home searches</li><li>Asset freezes</li><li>News of criminal charges</li></ul>
+      </div>
+      <div>
+        <header><h3>Pressure and Threats:</h3></header>
+        <ul><li>Threats against you</li><li>Pressure to return home</li><li>Negative media campaigns</li><li>Negative statements by officials</li></ul>
+      </div>
+      <div>
+        <header><h3>Travel and Immigration Issues:</h3></header>
+        <ul><li>Travel restrictions</li><li>Residency permit issues</li><li>Entry refusals</li><li>Passport cancellation</li></ul>
+      </div>
+      <div>
+        <header><h3>Business and Financial Disruptions:</h3></header>
+        <ul><li>Unexpected business audits</li><li>License issues</li><li>Bank account closures</li><li>Increased transaction scrutiny</li></ul>
+      </div>
+    </section>
+    <section class="services c-2x padd aligned-lists stress-test" id="stress">
+      <header><h2>Long-text test — layout samples only</h2></header>
+      <div>
+        <header><h3>A deliberately longer card heading that takes several lines</h3></header>
+        <ul>
+          <li>A deliberately long first item to test how wrapping changes the height of the corresponding item in the neighbouring card</li>
+          <li>Short second item</li>
+          <li>Another short item</li>
+          <li>Last item</li>
+        </ul>
+      </div>
+      <div>
+        <header><h3>Short heading</h3></header>
+        <ul>
+          <li>Short first item</li>
+          <li>A longer second item to check that subsequent rows still start at the same height across both cards</li>
+          <li>Third item</li>
+          <li>Last item</li>
+        </ul>
+      </div>
+      <footer><p>The fine dashed lines mark shared row boundaries for this test only.</p></footer>
+    </section>
+  </main>
+  <div class="experiment-note"><a href="index.html">Back to the unchanged homepage</a></div>
+</body>
+</html>
