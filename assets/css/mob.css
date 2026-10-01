@@ -160,11 +160,11 @@ h3{padding:2rem 0}
 	padding:2rem 0
 }
 a.f-logo::before{left:1rem}
-/* Mobile text experiment: +10%, without changing headings or rem geometry. */
-.main{font-size:1.76rem}
-.cover,.free{font-size:2.09rem}
-.cover ul{font-size:1.76rem}
-.stats{font-size:1.1rem}
-.services,.case-cards,.redfl,.footer{font-size:1.54rem}
-.approach{font-size:1.65rem}
+/* Mobile text experiment: +30%, without changing headings or rem geometry. */
+.main{font-size:2.08rem}
+.cover,.free{font-size:2.47rem}
+.cover ul{font-size:2.08rem}
+.stats{font-size:1.3rem}
+.services,.case-cards,.redfl,.footer{font-size:1.82rem}
+.approach{font-size:1.95rem}
 }
