@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Article page — layout sketch</title>
+  <link rel="stylesheet" href="assets/css/core.css?v=aligned-lists-1">
+  <link rel="stylesheet" href="assets/css/bit.css?v=compact-lists-20">
+  <link rel="stylesheet" href="assets/css/mob.css?v=mobile-buttons-40" media="(max-width: 800px)">
+  <link rel="stylesheet" href="assets/css/tv.css?v=compact-lists-20" media="(min-width: 2000px)">
+  <link rel="stylesheet" href="assets/css/internal.css?v=1">
+</head>
+<body>
+  <header class="header"><nav aria-label="Layout examples"><input type="checkbox" id="m-menu"><label class="hamb" for="m-menu" aria-label="Toggle navigation"></label><ul class="menu"><li><a class="logo" href="index.html"><img src="assets/svg/LS.svg" alt="Legal Status home"></a></li><li><a href="internal.html">Service</a></li><li class="active"><a href="article.html" aria-current="page">Article</a></li><li><a href="materials.html">Materials</a></li></ul></nav></header>
+  <div class="draft-note">Layout sketch — placeholder content, not an actual article. <a href="index.html">Current homepage</a></div>
+  <main class="page">
+    <header class="page-section page-stack">
+      <nav class="page-crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><a href="materials.html">Materials</a><span aria-current="page">Article example</span></nav>
+      <div class="page-meta"><span>Guide / news / case — optional type</span><span>Author name</span><span>Publication date</span></div>
+      <h1>A detailed article about a cross-border situation with a deliberately long heading</h1>
+      <p class="page-lead">A brief introduction that helps a visitor arriving directly from search understand the topic and decide whether to continue reading.</p>
+      <div class="page-tags" aria-label="Example topic labels"><span>Service</span><span>Situation</span><span>Optional country</span></div>
+    </header>
+    <div class="page-section page-grid">
+      <article class="page-prose">
+        <div class="page-panel page-prose"><h2>In brief</h2><p>A short summary or key points. For a case study this could instead describe the situation, the work undertaken and the result.</p></div>
+        <section class="page-prose page-anchor" id="background"><h2>Background</h2><p>This paragraph tests the reading column. It should remain distinct from navigation and supporting information, while using the full available width on a smartphone.</p><p>A second paragraph checks the rhythm of long-form content. The layout does not depend on an illustration or on a fixed number of paragraphs.</p></section>
+        <section class="page-prose page-anchor" id="details"><h2>Details and explanation</h2><h3>A subsection within the article</h3><p>Placeholder for the detailed material. The same text layout can support an interview, guide, news story or case description.</p><blockquote>A quotation or highlighted passage with no assumed author or factual claim.</blockquote><ul><li>One point that supports the explanation.</li><li>A second, longer point that wraps naturally and remains easy to distinguish from the next item.</li><li>A concluding point.</li></ul></section>
+        <figure class="page-prose"><div class="page-placeholder" role="img" aria-label="Illustration placeholder">Optional illustration</div><figcaption>Caption or image credit. This block can be omitted.</figcaption></figure>
+        <section class="page-prose page-anchor" id="video"><h2>Optional video or interview</h2><div class="page-placeholder">Video placeholder — no external player loaded</div><p>A video can supplement the text without being required for understanding it. No YouTube integration is connected in this sketch.</p></section>
+        <section class="page-prose page-anchor" id="conclusion"><h2>Closing section</h2><p>Placeholder for the concluding text, references or a link to a relevant service.</p><a class="btn" href="internal.html">Explore the service page</a></section>
+      </article>
+      <aside class="page-stack">
+        <nav class="page-panel page-toc page-stack" aria-label="Article contents"><h3>On this page</h3><div><a href="#background">Background</a><a href="#details">Details and explanation</a><a href="#video">Video or interview</a><a href="#conclusion">Closing section</a></div></nav>
+        <section class="page-panel page-stack"><h3>Related service</h3><p>A clear path from the material to relevant assistance, regardless of the visitor's entry point.</p><a href="internal.html">Service page example</a></section>
+      </aside>
+    </div>
+    <section class="page-section page-stack"><h2>Continue exploring</h2><div class="page-cards"><article class="page-card"><h3>Related guide</h3><p>A concise description of another material.</p><a href="materials.html">Browse materials</a></article><article class="page-card"><h3>Related case</h3><p>Space for a case summary without requiring personal details.</p><a href="materials.html#cases">See case layout</a></article><article class="page-card"><h3>Related service</h3><p>A direct route to the relevant service.</p><a href="internal.html">View service</a></article></div></section>
+  </main>
+  <footer class="draft-footer page-stack"><p>Legal Status — internal page layout sketches</p><nav class="page-tags" aria-label="Other layouts"><a href="index.html">Homepage</a><a href="internal.html">Service</a><a href="materials.html">Materials</a></nav></footer>
+  <script src="assets/js/scroll.js" defer></script>
+</body>
+</html>

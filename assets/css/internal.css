@@ -1,0 +1,68 @@
+/* Page layout sketches: presentation only, no fixed taxonomy or client scripts. */
+.page { color: #4a4a4a; background: #f8f9fa; font-size: 1.6rem; }
+.page *, .draft-footer * { min-inline-size: 0; }
+.page a, .draft-footer a { overflow-wrap: anywhere; }
+.page h1, .page h2, .page h3 { overflow-wrap: anywhere; }
+.page h1 { font-size: 4.8rem; }
+.page h2 { font-size: 3.2rem; line-height: 1.2; }
+.page h3 { font-size: 2.4rem; line-height: 1.2; padding: 0; }
+.page-section { padding: 3rem 4rem; }
+.page-hero { background: linear-gradient(to right, #123, #345); color: #fff; }
+.page-hero a { color: #cde; }
+.page-hero .btn { color: #fff; }
+.page-stack > * + * { margin-block-start: 2rem; }
+.page-lead { font-size: 2rem; }
+.page-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 3rem; align-items: start; }
+.page-prose > * + * { margin-block-start: 2rem; }
+.page-prose ul, .page-prose ol { padding-inline-start: 2.5rem; }
+.page-prose li { display: list-item; padding-left: 0; padding-inline-start: .3rem; }
+.page-prose ul > li { list-style: disc; }
+.page-prose ol > li { list-style: decimal; }
+.page-prose li + li { margin-block-start: .8rem; }
+.page-prose blockquote { border-left: 0; border-inline-start: .3rem solid #39f; padding-inline-start: 2rem; color: #666; }
+.page-panel { padding: 2rem; background: #fff; border: .1rem solid #dde; border-radius: .5rem; }
+.page-toc a { display: block; padding-block: .7rem; }
+.page-crumbs { display: flex; flex-wrap: wrap; gap: .8rem; font-size: 1.4rem; }
+.page-crumbs > * + *::before { content: '/'; margin-inline-end: .8rem; }
+.page-meta { display: flex; flex-wrap: wrap; gap: 1rem; color: #666; font-size: 1.4rem; }
+.page-tags { display: flex; flex-wrap: wrap; gap: 1rem; }
+.page-tags span { padding: .4rem 1rem; border: .1rem solid #ccd; border-radius: 2rem; }
+.page-placeholder { aspect-ratio: 16 / 9; display: grid; place-items: center; padding: 2rem; border: .1rem dashed #aaa; background: #edf0f4; color: #666; text-align: center; }
+.page details { border-block-end: .1rem solid #ccd; padding-block: 1rem; }
+.page summary { cursor: pointer; padding-block: 1rem; }
+.page details > p { margin-block: 1rem; }
+.page .btn { font-size: 1.8rem; max-inline-size: 100%; text-align: center; }
+.page-card { display: flex; flex-direction: column; gap: 1.5rem; padding: 2rem; border: .1rem solid #dde; border-radius: .5rem; background: #fff; }
+.page-card > a:last-child { margin-block-start: auto; padding-block-start: 1rem; }
+.page-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem; }
+.page-anchor { scroll-margin-block-start: 7rem; }
+.draft-note { padding: 1.5rem 4rem; border-block-end: .1rem solid #dde; background: #eef4fa; font-size: 1.4rem; }
+.draft-note a { text-decoration: underline; }
+.draft-footer { padding: 3rem 4rem; background: #123; color: #fff; font-size: 1.4rem; }
+.draft-footer a { color: #cde; }
+.page :focus-visible, .draft-note :focus-visible { outline: .2rem solid #39f; outline-offset: .3rem; }
+@media (max-width: 800px) {
+  .page { font-size: 2.08rem; }
+  .page-section, .draft-footer { padding: 3rem 1rem; }
+  .draft-note { padding: 1.5rem 1rem; font-size: 1.8rem; }
+  .page-grid, .page-cards { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .page h1 { font-size: 4.8rem; }
+  .page h2 { font-size: 3.6rem; }
+  .page h3 { font-size: 2.8rem; }
+  .page-lead { font-size: 2.47rem; }
+  .page-meta, .page-crumbs { font-size: 1.82rem; }
+  .page .btn { font-size: 2.52rem; }
+  .page-toc a, .page summary { padding-block: 1.5rem; }
+  .draft-footer { font-size: 1.82rem; }
+}
+@media (min-width: 2000px) {
+  .page-section, .draft-footer { padding: 6rem 12rem; }
+  .draft-note { padding-inline: 12rem; }
+}
+@media print {
+  html { font-size: 10pt; }
+  .header, .draft-note, .draft-footer { display: none; }
+  .page { background: #fff; color: #000; font-size: 12pt; }
+  .page-grid, .page-cards { grid-template-columns: 1fr; }
+  .page-hero { background: none; color: #000; }
+}
