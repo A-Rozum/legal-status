@@ -5,3 +5,7 @@
   status: active
   access: public
   audience: agent
+  basis:
+    kind: decided
+    date: '2026-10-07'
+    ref: accepted by the user during migration
