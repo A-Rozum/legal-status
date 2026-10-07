@@ -1,0 +1,12 @@
+id: repo:legal-status
+kind: project
+access: public
+audience: both
+description: Legal Status UAB website homepage redesign mockup — static pages
+packages:
+- id: repo:system
+  version: v0.4.4 (12a3799)
+  repo: A-Rozum/system
+  path: .system
+artifacts:
+- '**'
