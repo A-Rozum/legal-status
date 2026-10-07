@@ -5,7 +5,7 @@ audience: both
 description: Legal Status UAB website homepage redesign mockup — static pages
 packages:
 - id: repo:system
-  version: v0.6.0 (e03cea5)
+  version: v0.7.0 (69ce190)
   repo: A-Rozum/system
   path: .system
 artifacts:
