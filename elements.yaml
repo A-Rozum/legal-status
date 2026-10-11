@@ -1,11 +1,11 @@
-- id: core:web/kernel-legal-status@1
+- id: jadro:web/repo@1
   path: AGENTS.md
   applies:
     always: true
-  status: active
+  status: užytak
   access: public
-  audience: agent
+  audience: [agent]
   basis:
-    kind: decided
+    kind: rašennie
     date: '2026-10-07'
     ref: accepted by the user during migration
