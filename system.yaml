@@ -5,11 +5,11 @@ audience: [agent, human]
 description: Legal Status UAB website homepage redesign mockup – static pages
 packages:
 - id: plyn:standard
-  version: v0.15.10
+  version: v0.15.11
   repo: A-Rozum/plyn-standard
   path: .system
 - id: plyn:tools
-  version: v0.15.11
+  version: v0.15.12
   repo: A-Rozum/plyn-tools
   path: .system/tools
 artifacts:
